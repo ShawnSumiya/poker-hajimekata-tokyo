@@ -9,6 +9,8 @@ const notoSansJP = Noto_Sans_JP({
   display: "swap",
 });
 
+const SITE_URL = "https://poker-hajimekata-tokyo.vercel.app";
+
 export const viewport = {
   width: "device-width",
   initialScale: 1,
@@ -27,13 +29,17 @@ export const metadata: Metadata = {
     "ポーカー デビュー",
     "アミューズメントカジノ",
   ],
+  alternates: {
+    canonical: SITE_URL,
+  },
   openGraph: {
     title: "東京でポーカー初心者ならD.D Poker高田馬場！ルールから親切丁寧に教えます",
     description:
       "「ポーカーを始めてみたいけど始め方がわからない」方へ。東京・高田馬場のD.D Pokerでは初心者講習を毎日開催！おひとり様大歓迎、基本ルールから丁寧にレクチャーします。",
+    url: SITE_URL,
+    siteName: "D.D Poker 高田馬場",
     locale: "ja_JP",
     type: "website",
-    siteName: "D.D Poker 高田馬場",
   },
   twitter: {
     card: "summary_large_image",

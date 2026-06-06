@@ -21,6 +21,24 @@ const PHONE_NUMBER = "03-6709-6144";
 const PHONE_HREF = "tel:0367096144";
 const LINE_HREF = "https://lin.ee/ddpoker-takadanobaba";
 const OFFICIAL_SITE = "https://www.dd-poker.com/";
+const SITE_URL = "https://poker-hajimekata-tokyo.vercel.app/";
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "EntertainmentBusiness",
+  name: "D.D Poker 高田馬場",
+  url: SITE_URL,
+  address: {
+    "@type": "PostalAddress",
+    postalCode: "169-0075",
+    addressRegion: "東京都",
+    addressLocality: "新宿区",
+    streetAddress: "高田馬場1-22-7 高田馬場富士ビル2F",
+    addressCountry: "JP",
+  },
+  openingHours: "Mo-Su 14:00-24:00",
+  priceRange: "¥5,000",
+};
 
 const LOGO_WIDTH = 512;
 const LOGO_HEIGHT = 512;
@@ -217,6 +235,10 @@ function ShopInfoRow({
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <header className="sticky top-0 z-40 bg-[linear-gradient(to_right,#f29600,#ffef00)] shadow-md">
         <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6 sm:py-3">
           <BrandLogo variant="header" className="drop-shadow-sm" />
