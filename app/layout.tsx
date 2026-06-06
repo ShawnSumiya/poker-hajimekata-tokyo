@@ -16,7 +16,15 @@ export const viewport = {
   initialScale: 1,
 };
 
+const OGP_IMAGE = {
+  url: "/public_opengraph-image.png",
+  width: 2848,
+  height: 1504,
+  alt: "東京でポーカー初心者ならD.D Poker高田馬場！ルールから親切丁寧に教えます",
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "東京でポーカー初心者ならD.D Poker高田馬場！ルールから親切丁寧に教えます",
   description:
     "「ポーカーを始めてみたいけど始め方がわからない」方へ。東京・高田馬場のD.D Pokerでは初心者講習を毎日開催！おひとり様大歓迎、基本ルールから丁寧にレクチャーします。チップ無制限遊び放題＋1ドリンク込みで5,000円ポッキリ。予約不要で直接来店OK！",
@@ -40,12 +48,14 @@ export const metadata: Metadata = {
     siteName: "D.D Poker 高田馬場",
     locale: "ja_JP",
     type: "website",
+    images: [OGP_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "東京でポーカー初心者ならD.D Poker高田馬場！",
     description:
       "初心者講習＋チップ無制限遊び放題プラン5,000円ポッキリ。予約不要で直接来店OK！",
+    images: [OGP_IMAGE.url],
   },
   robots: {
     index: true,
