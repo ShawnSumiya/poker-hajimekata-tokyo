@@ -19,7 +19,7 @@ import type { LucideIcon } from "lucide-react";
 
 const PHONE_NUMBER = "03-6709-6144";
 const PHONE_HREF = "tel:0367096144";
-const LINE_HREF = "https://lin.ee/ddpoker-takadanobaba";
+const LINE_HREF = "https://lin.ee/5BP7dX7";
 const OFFICIAL_SITE = "https://www.dd-poker.com/";
 const SITE_URL = "https://poker-hajimekata-tokyo.vercel.app/";
 
